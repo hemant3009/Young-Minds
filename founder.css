@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins','Times New Roman', Times, serif sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+}
+body{
+    background: #FCFBF0;
+    width: 100%;
+    /* background: linear-gradient(to bottom, #000, #1F1F1F); */
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*--------nav bar----------*/
+.container .logo img{
+    width: 200px;
+    height: 140px;
+}
+.nav-menu{
+    padding: 40px;
+}
+.menu > .menu-item{
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+}
+
+.menu > .menu-item > a{
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 450;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.menu > .menu-item > .sub-menu > .menu-item > a:hover,
+.menu > .menu-item:hover > a{
+    color: #edcf21;
+}
+
+.menu > .menu-item > .sub-menu{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-top: 3px solid #edcf21;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu > .menu-item:hover > .sub-menu{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.menu > .menu-item > .sub-menu > .menu-item{
+    display: block;
+}
+
+.menu > .menu-item > .sub-menu > .menu-item > a{
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+/*-----------Main--------*/
+.text{
+    padding: 20px;
+}
+.text h1{
+    font-size: 80px;
+    /* padding: 20px; */
+    text-align: center;
+}
+
+.cont{
+    padding-top: 60px;
+    display: flex;
+}
+
+.cont p{
+    padding-left: 40px;
+    font-size: 40px;
+    color: #5c5a5a;
+}
+
+.cont img{
+    width: 40%;
+    height: auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+}
