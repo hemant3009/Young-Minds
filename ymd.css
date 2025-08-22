@@ -23,7 +23,6 @@ body{
     align-items: center;
 }
 
-
 /*--------nav bar----------*/
 .container .logo img{
     width: 200px;
@@ -91,132 +90,95 @@ body{
 .main_img{
     height: 400px;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-image: url(images/IMG_5736.JPG);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/*--------cont-------------*/
-
-.rotate h1{
-    font-size: 80px;
-    text-align: center;
-    padding: 40px;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-.cont{
-    height: 100vh;
+/*------Main text----------*/
+.header-text{
     display: flex;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    margin-top: 50px;
+    font-size: 55px;
 }
 
-.slider{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    transform-style: preserve-3d;
-    animation: rotate 25s linear infinite;
+.text p{
+    font-size: 40px;
+    padding: 30px;
+    color: #5c5a5a;
+    text-align: center;
 }
 
-.slider img{
-    width: 600px;
-    height: 700px;
-    border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+/*---------About us-----------*/
+.about_us{
+    padding: 20px;
+    margin-top: 40px;
 }
 
-@keyframes rotate {
-    0% {
-        transform: perspective(1400px) rotateY(0deg);
-    }
-    100% {
-        transform: perspective(1400px) rotateY(360deg);
-    }
+.about_us h1{
+    font-size: 80px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 35px;
 }
 
-.slider span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i)*90deg)) translateZ(650px);
+.about_us p{
+    font-size: 40px;
+    margin-left: 20px;
 }
 
-.slider span img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.8s ease, box-shadow 0.8s ease;
-    border-radius: 15px;
-}
-
-.slider span:hover img{
-    transform: translateY(-20px) scale(1.1);
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.35);
-}
-
-/*--------footer--------*/
-.footer{
-    background-color: white;
-    padding: 40px 20px;
-}
-.foot{
+.about_us_content{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
-    flex-wrap: wrap;
 }
 
-.icon img{
-    width: 200px;
+.about_us_content img{
+    width: 25%;
     height: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-.readMore {
-    flex: 1;
-    min-width: 200px;
-    margin-left: 70px;
+.about_us_content p {
+    padding: 20px;
+    color: #5c5a5a;
 }
 
-.readMore h3{
-    font-size: 28px;
-    margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+.about_us button{
+    justify-content: center;
 }
 
-.links{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/*-------curriculum----------*/
+.curr{
+    padding: 20px;
+    background-color: white;
+    margin-top: 40px;
 }
 
-.links a{
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-family: poppins;
-    font-weight: 500;
-    transition: rgb(45, 45, 45) 0.3s;
+.curr h1{
+    font-size: 80px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 35px;
 }
 
-.links a:hover{
-    color: #666;
+.curr p{
+    font-size: 40px;
+    color: #5c5a5a;
 }
 
-.links i{
-    width: 30px;
+/*------worksheet--------*/
+
+.worksheet{
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.worksheet h1{
+    font-size: 80px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 35px;
 }

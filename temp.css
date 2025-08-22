@@ -110,7 +110,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -70px;
+    margin-top: -20px;
 }
 
 .three_logos .first{
@@ -142,6 +142,11 @@ body{
     height: auto;
 }
 
+.under_logo{
+    font-size: 24px;
+    text-align: center;
+    
+}
 /*---------About us-----------*/
 .about_us{
     padding: 20px;
@@ -154,6 +159,7 @@ body{
 
 .about_us p{
     font-size: 40px;
+    font-family: poppins;
 }
 
 .about_us_content{
@@ -239,6 +245,7 @@ body{
 .services-list div p{
     font-size: 25px;
     color: #5c5a5a;
+    font-family: poppins;
 }
 .services-list div h2 span{
     font-weight: 700;
@@ -292,6 +299,7 @@ body{
 
 .summit p{
     font-size: 40px;
+    font-family: poppins;
 }
 
 .cont{
