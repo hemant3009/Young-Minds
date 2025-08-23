@@ -177,7 +177,7 @@ body{
     gap: 40px;
 }
 
-.images img{
+.images img{ 
     width: 270px;
     height: 270px;
     border-radius: 50%;
@@ -221,10 +221,102 @@ body{
     font-family: poppins;
 }
 
-
 .main .bullet{
     margin-left: 65px;
     font-size: 25px;
     font-family: poppins;
 }
 
+/*-----------itinerary---------*/
+.itinerary{
+    padding: 20px;
+    margin-top: 40px;
+    background-color: white;
+}
+
+.itinerary h1{
+    font-size: 80px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 35px;   
+}
+
+.itinerary .images{
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.itinerary .images .img1{
+    width: 400px;
+    height: 400px;
+    background-image: url(images/itinerary_1.AVIF);
+    background-size: cover;
+    background-position: center;
+    border: 4px solid black;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+}
+
+.itinerary .images .img2{
+    width: 400px;
+    height: 400px;
+    background-image: url(images/itinerary_2.AVIF);
+    background-size: cover;
+    background-position: center;
+    border: 4px solid black;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+}
+
+.itinerary .images .img3{
+    width: 400px;
+    height: 400px;
+    background-image: url(images/itinerary_3.AVIF);
+    background-size: cover;
+    background-position: center;
+    border: 4px solid black;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+}
+
+.itinerary .images .img4{
+    width: 400px;
+    height: 400px;
+    background-image: url(images/itinerary_4.AVIF);
+    background-size: cover;
+    background-position: center;
+    border: 4px solid black;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+}
+
+/*----------consultations------------*/
+.consultations{
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.consultations h1{
+    font-size: 80px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+/*------workshops-----------*/
+.workshops{
+    padding: 20px;
+    margin-top: 40px;
+    background-color: white;
+
+}
+
+.workshops h1{
+    font-size: 80px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.work
