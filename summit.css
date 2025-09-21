@@ -115,47 +115,80 @@ body{
 
 /*----------Summit-------------*/
 
-.details{
-    padding: 20px;
-    margin-top: 40px;
-    background-color: white;
-    text-align: center;
+/* Common section style */
+.details, 
+.why_summit {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  border-left: 8px solid #f0d123;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.details h1{
-    font-size: 80px;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 35px;
+.details:hover,
+.why_summit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
 }
 
-.details p{
-    font-size: 40px;
-    margin-left: 20px;
-    margin-bottom: 80px;
-    font-family: poppins;
-
+.details h1,
+.why_summit h1 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+  color: #222;
 }
 
-/*---------About us-----------*/
-.why_summit{
-    padding: 20px;
-    margin-top: 40px;
-    text-align: center;
+/* Accent underline under headings */
+.details h1::after,
+.why_summit h1::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 5px;
+  background: linear-gradient(90deg, #feaf4f, #feed00);
+  left: 15%;
+  bottom: 0;
+  border-radius: 3px;
 }
 
-.why_summit h1{
-    font-size: 80px;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 35px;
+.details p,
+.why_summit p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 20px auto;
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+  max-width: 950px;
+  text-align: justify;
 }
 
-.why_summit p{
-    font-size: 40px;
-    margin-left: 20px;
-    font-family: poppins;
+/* Special styling for WHY SUMMIT to visually separate */
+.why_summit {
+  background: linear-gradient(135deg, #fdfdfd, #f8fbff);
+  border-left: 8px solid #f0d123;
 }
+
+.about_us_content {
+  margin-top: 20px;
+}
+
+.about_us_content img {
+  max-width: 100%;
+  border-radius: 16px;
+  margin: 20px 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
 
 /*-------theme-----------*/
 .theme{
@@ -193,10 +226,10 @@ body{
 }
 
 /*-------summit include---------*/
-.summit_include{
+
+/* .summit_include{
     padding: 20px;
     margin-top: 40px;
-    /* text-align: center; */
 }
 
 .summit_include h1{
@@ -225,7 +258,95 @@ body{
     margin-left: 65px;
     font-size: 25px;
     font-family: poppins;
+} */
+
+.summit_include {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
+
+.summit_include h1 {
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #222;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+}
+
+.summit_include h1::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 5px;
+  background: linear-gradient(90deg, #fa9810, #fcf808);
+  left: 15%;
+  bottom: 0;
+  border-radius: 3px;
+}
+
+/* Each arrow item */
+.arrow {
+  display: flex;
+  align-items: flex-start;
+  margin: 25px 0;
+  padding: 20px;
+  border-left: 4px solid #f0d123;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.arrow:hover {
+  background: #eef6ff;
+  transform: translateX(5px);
+}
+
+.arrow .right {
+  font-size: 28px;
+  margin-right: 20px;
+  color: #d7c03a;
+  margin-top: 5px;
+}
+
+.arrow .content p {
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Bulleted sub-items */
+.main .bullet {
+  margin: -10px 0 20px 65px;
+  padding-left: 20px;
+  border-left: 2px dashed #bbb;
+}
+
+.main .bullet ul {
+  padding: 0;
+  margin: 0;
+  list-style: disc;
+  color: #4facfe;
+}
+
+.main .bullet ul li {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  color: #555;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
 
 /*-----------itinerary---------*/
 .itinerary{
@@ -355,4 +476,58 @@ body{
     border: 4px solid black;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     border-radius: 12px;
+}
+
+/*--------Footer-------*/
+.footer{
+    background-color: white;
+    padding: 40px 20px;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.icon img{
+    width: 200px;
+    height: auto;
+}
+
+.readMore {
+    flex: 1;
+    min-width: 200px;
+    margin-left: 70px;
+}
+
+.readMore h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: poppins;
+    font-weight: 500;
+    transition: rgb(45, 45, 45) 0.3s;
+}
+
+.links a:hover{
+    color: #666;
+}
+
+.links i{
+    width: 30px;
 }
