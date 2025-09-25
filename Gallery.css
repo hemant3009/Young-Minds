@@ -159,9 +159,10 @@ body{
     transform: scale(1.1);
 }
 
-.image:hover .layer{
+/* .image:hover .layer{
     height: 100%;
-}
+} */
+
 
 
 /*--------Footer-------*/
