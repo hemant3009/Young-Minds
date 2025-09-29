@@ -21,12 +21,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 100px;
 }
 
 /*--------nav bar----------*/
 .container .logo img{
-    width: 200px;
-    height: 140px;
+    width: 150px;
+    height: 110px;
 }
 .nav-menu{
     padding: 40px;
@@ -114,7 +117,7 @@ body{
 }
 
 /*---------About us-----------*/
-.about_us{
+/* .about_us{
     padding: 20px;
     margin-top: 40px;
     background-color: white;
@@ -149,7 +152,83 @@ body{
 
 .about_us button{
     justify-content: center;
+} */
+
+.about_us {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  /* background: #fafafa; light background */
 }
+
+.about_us_card {
+  max-width: 1200px;
+  background: #fff;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about_us_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.about_us h1 {
+  font-size: 70px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about_us h1::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 4px;
+  margin-top: 8px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #ffb300, #ffe259);
+}
+
+.about_us_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about_us_content p {
+  flex: 1;
+  font-size: 30px;
+  line-height: 1.8;
+  font-family: "Poppins", sans-serif;
+  color: #555;
+}
+
+.about_us_content img {
+  flex: 1;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about_us_content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about_us_content img {
+    max-width: 100%;
+  }
+} 
 
 /*-------curriculum----------*/
 /* .curr{
@@ -238,6 +317,7 @@ body{
    gap: 70px;
    flex-wrap: nowrap;
    margin-bottom: 30px;
+   overflow: hidden;
 }
 
 .side_1, .side_2{
@@ -266,12 +346,24 @@ body{
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     margin-top: 200px;
+    overflow: hidden;
+    object-fit: contain;
 }
 
-.box img, .center-box img, .box video, .center-box video {
+.box img,
+.center-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* keeps same behavior as before */
+    border-radius: 4px;
+}
+
+.box video,
+.center-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* shows entire video */
+    background: white; 
     border-radius: 4px;
 }
 

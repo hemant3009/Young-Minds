@@ -21,12 +21,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 100px;
 }
 
 /*--------nav bar----------*/
 .container .logo img{
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
 }
 .nav-menu{
     padding: 50px;
@@ -90,7 +93,7 @@ body{
 .main_img{
     height: 400px;
     width: 100%;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     background-image: url(images/IMG_5736.JPG);
     background-size: cover;
     background-position: center;
@@ -148,57 +151,82 @@ body{
     
 }
 /*---------About us-----------*/
-.about_us{
-    padding: 20px;
+.about_us {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  /* background: #fafafa; light background */
 }
 
-.about_us h1{
-    font-size: 80px;
-    padding: 20px;
+.about_us_card {
+  max-width: 1200px;
+  background: #fff;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about_us p{
-    font-size: 40px;
-    font-family: poppins;
+.about_us_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
 
-.about_us_content{
-    display: flex;
+.about_us h1 {
+  font-size: 70px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 20px;
+  position: relative;
 }
 
-.about_us_content img{
-    width: 35%;
-    height: auto;
+.about_us h1::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 4px;
+  margin-top: 8px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #ffb300, #ffe259);
+}
+
+.about_us_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .about_us_content p {
-    padding: 20px;
-    color: #5c5a5a;
+  flex: 1;
+  font-size: 30px;
+  line-height: 1.8;
+  font-family: "Poppins", sans-serif;
+  color: #555;
 }
 
-.about_us button{
-    justify-content: center;
+.about_us_content img {
+  flex: 1;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  object-fit: cover;
 }
 
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 2px solid #FFC926;
-    padding: 14px 50px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: #000;
-    transition: background 0.5s;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    /* font-weight: 540; */
+/* Responsive */
+@media (max-width: 768px) {
+  .about_us_content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about_us_content img {
+    max-width: 100%;
+  }
 }
 
-.btn:hover{
-    background: #FFC926;
-    color: black;
-}
 
 /*---------Out Initiatives------------*/
 
@@ -298,7 +326,7 @@ body{
 }
 
 /*--------Summit-----------*/
-.summit{
+/* .summit{
     padding: 20px;
 }
 
@@ -324,7 +352,84 @@ body{
 .cont p {
     padding: 20px;
     color: #5c5a5a;
+} */
+
+/*--------Summit Section----------*/
+.summit {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
 }
+
+.summit_card {
+  max-width: 1200px;
+  background: #fff;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summit_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.summit_card h1 {
+  font-size: 70px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.summit_card h1::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 4px;
+  margin-top: 8px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #ffb300, #ffe259);
+}
+
+.summit_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.summit_content p {
+  flex: 1;
+  font-size: 30px;
+  line-height: 1.8;
+  font-family: "Poppins", sans-serif;
+  color: #555;
+}
+
+.summit_content img {
+  flex: 1;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .summit_content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .summit_content img {
+    max-width: 100%;
+  }
+}
+
 
 /*---------------Gallery------------*/
 .gallery{
@@ -349,6 +454,7 @@ body{
     height: 300px; */
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .gal .image img{
@@ -356,7 +462,7 @@ body{
     height: 100%;
     border-radius: 10px;
     display: block;
-    transition: trasnform 0.5s;
+    transition: trasnform 0.5s ease;
 }
 
 .layer{
@@ -384,12 +490,13 @@ body{
 }
 
 .image:hover img{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    transition-delay: 0.05s;
 }
 
-.image:hover .layer{
+/* .image:hover .layer{
     height: 100%;
-}
+} */
 
 /*-------contact us----------*/
 .contactUs{
